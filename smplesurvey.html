@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Sample Survey Form</title>
+    </head>
+      <header>
+        <h1>Do you like reading?</h1>
+      </header>
+      <body>
+        <form action="/smplesurvey.html" method="POST">
+          <section>
+              <label for="author">Who is your favourite author?</label>
+              <input type="text" id="author" name="first-texxt-field">
+          </section>
+          <br>
+          <section>
+              <label for="genre">What is your favorite genre?</label>
+              <input type="text" id="genre" name="genre">
+          </section>
+          <br>
+          <section>
+              <label for="days">How many days do you take to read a book?</label>
+              <input type="number" id="days" name="days" step="1" required>
+          </section>
+          <br>
+          <section>
+              <label for=amount>How much do you spend on books each month?</label>
+              <input type="range" id="amount" name="amount" min="1" max="100" step="1">
+          </section>
+          <br>
+          <section>
+              <p>How many books do you read per week?</p>
+              <label for="1">1-2</label>
+              <input type="checkbox" id="1" name="books" value="1">
+              <br>
+              <label for="2">2-3</label>
+              <input type="checkbox" id="2" name="books" value="2">
+              <br>
+              <label for="3">4-5</label>
+              <input type="checkbox" id="3" name="books" value="3">
+          </section>
+          <br>
+          <section>
+              <p>Which do you prefer?</p>
+              <label for="series">Series</label>
+              <input type="radio" id="series" name="answer" value="series">
+              <label for="standalone">Stand Alone</labeL>
+              <input type="radio" id="standalone" name="answer" value="standalone">
+          </section>
+          <br>
+          <section>
+              <label for="hours"> How many hours do you read a day?</label>
+              <select id="hours" name="hours">
+                  <option value="30 minutes">30 minutes</option>
+                  <option value="1 hour">1 hour</option>
+                  <option value="1:30 hour">1 hour 30 minutes</option>
+                  <option value="2 hour">2 hours</option>
+                  <option value="more than 2">More than 2 hourd</option>
+              </select>
+          </section>
+          <br>
+          <section>
+              <label for="bookamount">How many books do you have?</label>
+              <input type="text" list="books" id="bookamount" name="bookamount">
+              <datalist id="books">
+                  <option value="5"></option>
+                  <option value="10"></option>
+                  <option value="15"></option>
+                  <option value="20"></option>
+                  <option value="more than 20"></option>
+              </datalist>
+          </section>
+          <br>
+          <section>
+              <label for="favorite">What is your favorite book and why do you like it?</label>
+              <br>
+              <textarea id="favorite" name="favorite" rows="10" colums="200">
+              </textarea>
+          </section>
+          <br>
+              <input type="submit" value="Send">
+        </form>
+      </body>
+  </html>
